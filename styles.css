@@ -169,10 +169,9 @@ footer {
 }
 
 /* Uses Page */
-.uses {
-  text-align: center;
+#usesPage{
+  test-align: center;
 }
-
 .hardware a {
   color: #c47a3a;
 }
