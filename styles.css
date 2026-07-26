@@ -144,7 +144,7 @@ color: #e8d8c2;
   text-decoration: none;
   border-radius: 5px;
   font-size: 0.9rem;
-  ;
+  
 }
 .links a:hover{
   color: #2f3437;
@@ -169,9 +169,25 @@ footer {
 }
 
 /* Uses Page */
-#usesPage{
-  test-align: center;
+
+.uses{
+  text-align: center;
 }
 .hardware a {
   color: #c47a3a;
 }
+#backButton {
+  margin-top: 20px;
+   padding: 8px 14px;
+  background: #2f3437;
+  color: #c47a3a;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  }
+#backButton:hover {
+  color: #2f3437;
+  background-color: #c47a3a;
+  transition: background 0.2s ease
+}
+

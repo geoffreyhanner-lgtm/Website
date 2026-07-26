@@ -1,5 +1,9 @@
 /* Uses Page */
-
+body{
+  color: #c47a3a;
+  background-color: #2f3437;
+  font-family: Arial, sans-serif;
+}
 .uses{
   text-align: center;
 }
