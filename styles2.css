@@ -24,3 +24,10 @@ body{
   background-color: #c47a3a;
   transition: background 0.2s ease
 }
+footer {
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+

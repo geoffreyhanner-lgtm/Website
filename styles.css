@@ -95,6 +95,9 @@ color: #e8d8c2;
 .tech {
   text-align: center;
 }
+.tech h2 {
+  margin-bottom: 0;
+}
 .icon {
   margin-top: auto;
   font-size: 40px;
@@ -169,7 +172,7 @@ footer {
 }
 
 /* Uses Page */
-
+/*
 .uses{
   text-align: center;
 }
@@ -190,4 +193,10 @@ footer {
   background-color: #c47a3a;
   transition: background 0.2s ease
 }
-
+footer {
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+*/
