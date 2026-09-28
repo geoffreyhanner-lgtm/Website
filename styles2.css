@@ -1,33 +1,145 @@
-/* Uses Page */
-body{
-  color: #c47a3a;
-  background-color: #2f3437;
-  font-family: Arial, sans-serif;
-}
-.uses{
-  text-align: center;
-}
-.hardware a {
-  color: #c47a3a;
-}
-#backButton {
-  margin-top: 20px;
-   padding: 8px 14px;
-  background: #2f3437;
-  color: #c47a3a;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  }
-#backButton:hover {
-  color: #2f3437;
-  background-color: #c47a3a;
-  transition: background 0.2s ease
-}
-footer {
-  text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
+/*
+  Secondary-page styles.
+  Load styles.css first, then this file on uses.html and certificates.html.
+*/
+
+.page-content {
+  width: min(100% - 2.5rem, var(--page-max));
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(3rem, 7vw, 5rem);
 }
 
+#backButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  margin: 0 0 1.5rem;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.45rem;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+}
+
+#backButton:hover {
+  background: var(--accent);
+  color: var(--ink);
+}
+
+#backButton:focus-visible {
+  outline: 3px solid var(--surface);
+  outline-offset: 4px;
+}
+
+.page-title,
+.uses {
+  margin-bottom: 1rem;
+  color: var(--accent);
+  font-size: clamp(2rem, 5vw, 3rem);
+  text-align: center;
+}
+
+.page-intro {
+  max-width: 68ch;
+  margin: 0 auto;
+  color: var(--muted-text);
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  text-align: center;
+}
+
+/* Uses page */
+#uses {
+  margin-bottom: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 0.14);
+}
+
+#uses .uses {
+  margin-bottom: 0.75rem;
+}
+
+#tools,
+#hardware,
+#otherTools,
+#learningResources {
+  margin-top: 1.5rem;
+}
+
+.tools,
+.hardware,
+.otherTools,
+.learningResources,
+.amazonCert {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  box-shadow: 0 0.75rem 2rem rgb(0 0 0 / 0.14);
+}
+
+.tools h2,
+.hardware h2,
+.otherTools h2,
+.learningResources h2,
+.amazonCert h2 {
+  margin-bottom: 0.5rem;
+}
+
+.tools p,
+.hardware p,
+.otherTools p,
+.learningResources p {
+  color: var(--muted-text);
+}
+
+.tools ul,
+.hardware ul,
+.otherTools ul,
+.learningResources ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.tools li,
+.hardware li,
+.otherTools li,
+.learningResources li {
+  margin: 0.45rem 0;
+}
+
+.hardware a {
+  color: #e1a066;
+  font-weight: 700;
+}
+
+/* Certificates page */
+.amazonCert {
+  text-align: center;
+}
+
+.amazonCert h2 {
+  color: var(--accent);
+}
+
+.amazonCert img {
+  display: block;
+  width: min(100%, 40rem);
+  height: auto;
+  margin: 1rem auto;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 1.75rem rgb(0 0 0 / 0.2);
+}
+
+@media (max-width: 40rem) {
+  .page-content {
+    width: min(100% - 2rem, var(--page-max));
+  }
+}
